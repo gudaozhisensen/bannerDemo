@@ -70,6 +70,23 @@ and open the template in the editor.
                 </div>
             
             </div>
+              <!--直接声明的函数 拥有prototype这个属性，而new 构造出来的函数不存在prototype这个属性象。-->
+              <script type="text/javascript" src="resourse/jquery-3.1.1.min.js"> </script>
+              <script type="text/javascript">
+                  var Scroll={};//定义一个全局变量
+              (function (win,doc,$){//匿名函数
+              function CusScrollBar(options){//匿名函数里的构造函数，在匿名函数中声明的函数在外部不能调用，所以要定义一个全局变量
+                  this._init(options);
+                }
+                $.extend();
+            //    CusScrollBar.prototype._init=function(){//在CusScrollBar函数上添加init方法
+               //     console.log("test");
+               // }
+                Scroll.CusScrollBar=CusScrollBar;//给变量添加一个属性
+              })(window,document,jQuery);
+              new Scroll.CusScrollBar;//实例化参数
+             
+              </script>
               
                  </body>
 </html>
