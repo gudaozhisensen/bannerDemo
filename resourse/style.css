@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-12-20, 14:58:59
+    Author     : lx
+*/
+body{
+    background: #ccc;
+    
+}
+
+.scroll-demo{
+    width: 540px;
+    border:1px solid #e5e5e5; /*边框线*/
+    background: #fff;
+    margin: 30px auto; /*居中对齐*/
+}
+/*标签切换区*/
+.scroll-tab{
+    height: 34px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    background:#f8f8f8 ;
+    
+}
+.scroll-tab .tab-item{
+    
+    float: left;
+    font:14px/34px "Microsoft Yahei";/*设置字的大小和字体*/
+    height: 34px;
+    text-align: center;
+    border-right:2px solid #e5e5e5;/*设置字旁边的线*/
+    padding:0 20px; 
+}
+
+.scroll-tab .tab-active{
+    color: #00be3c;
+    background: #fff;
+    border-top: 2px solid #00be3c;
+    margin: -1px 0;
+}
