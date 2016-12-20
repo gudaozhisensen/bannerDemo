@@ -48,8 +48,49 @@ body{
 
 /*滚动内容区*/
 .scroll-wrap{
-  width: 100%;
-height: 300px;
+    position: relative;
+  width: 100%;/*父容器宽度是多少就是多少*/
+  height: 300px;
 }
 
+/*滚动内容*/
 
+.scroll-wrap .scroll-cont{
+  height: 100%; 
+    padding: 0 15px; 
+  overflow: hidden;
+  
+}
+
+.scroll-wrap .scroll-cont h3{
+    
+    font:16px/3 "Microsoft Yahei";/*3表示相对于容器行高的3倍*/
+    text-align: center;
+}
+.scroll-wrap .scroll-cont p{
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 2em;/*将段落的第一行缩进2个字*/
+    margin-bottom: 15px; /*底部宽度10px*/
+}
+
+/*滚动条*/
+.scroll-wrap .scroll-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #eaeaea; 
+}
+
+/*滑块*/
+.scroll-wrap .scroll-slider{
+   position: absolute;
+   top: 0;
+   left: 1px;
+   width: 10px;
+   height: 30px;
+   background-color: #fff;
+    
+}

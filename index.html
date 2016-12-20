@@ -29,12 +29,29 @@ and open the template in the editor.
             <div class="scroll-wrap">
                 
             <!--滚动内容-->
-            <div class="scroll-cont"></div>
-            <h3 class="auchor">春天来了</h3>
-            <div class="scroll-ol"><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <div class="scroll-cont">
+            <h3 class="auchor">怎样利用 git 撤销操作</h3>
+            <div class="scroll-ol"><p> 对于版本管理系统而言，最重要的一个特性之一就是能够撤销错误的操作。在 git 中，撤销有很多种可能的意思。
+    每当你做出一个 提交 的时候，git 都会立即在你的 repository 保存一个快照，之后你就可以通过 git 来恢复到这个项目的前一个版本了。
+    这下面这篇文章中，我将会就几种常见的情景来讨论怎样通过 git 来完美的撤销这些操作。</p>
+                <p>情景：你刚按下 git push ，将修改推送到了 github ，然后就发现在你的提交中存在一些问题。这时候那就会想撤销操作。
+
+                <p> 解决： git rever</p>
+
+                <p>原理： git revert这个操作会生成一个新的 commit，这个提交和 提供的 SHA 是相反的：如果之前的提交是 “matter”，
+                    那么这个提交就是 “anti-matter”，也就是说之前操作中新增的内容将会被删除，之前操作中被删除的内容也将会被增加。</p>
             </div>
-            <h3 class="auchor">夏天来了</h3>
-            <div class="scroll-ol"><p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+            <h3 class="auchor">《Bootstrap 初体验》</h3>
+            <div class="scroll-ol">
+                <p>   了解了jQuery的基本语法之后，就开始准备学习Bootstrap框架了。
+                      在慕课网上看过姜维老师讲述的《基于bootstrap的网页开发》后，真正被Bootstrap的强大功能惊艳到。
+                       随后又在网易云课堂接触到李炎恢老师是《Bootstrap视频教程》，再一次被惊艳。在用一通宵的时间看完李老师的基础教程后，
+                        跃跃欲试，然后决定跟着老师的步骤做一个自己的网页。</p>
+                
+                <p>    虽说是准备跟着老师做，但也不想完全照搬老师的内容，这时候一转头，正好看到电脑屏幕上电影《Detachment》的截图，瞬间就决定了以此为主题制作网页。
+    由于整体框架和老师是完全一样的，所以制作的过程还算是比较顺利。整个网页大概花费了两天时间，其中有很大一部分时间花在找材料上，而且为了使网页实际体验效果比较好，在需要加链接的地方都尽量贴上了链接。做完以后面临的一个问题就是怎么展示这些网页，自己看的话在本地当然没有问题，但是如果要和别人分享的话，最好还是放在网上。为了达到这个目的，尝试了三个方法：
+
+购买域名，部署网站；工作量较大，涉及到前后端的知识，稍微尝试了一下后放弃此方案；</p>
             </div>
             <h3 class="auchor">秋天来了</h3>
             <div class="scroll-ol"><p>cccccccccccccccccccccccccccccccccccccccccccc</p>
@@ -43,12 +60,16 @@ and open the template in the editor.
             <div class="scroll-ol"><p>dddddddddddddddddddddddddddddddddddddddddddd</p>
             </div>
             
+           </div> 
             <!-- 滚动条-->
-            <div class="scroll-bar">
+                <div class="scroll-bar">
                 <!--滚动滑块-->
-                <div class="scroll-slider">
+                  <div class="scroll-slider"></div>
 
-                 </div>
-        </div>
-    </body>
+                     
+                </div>
+            
+            </div>
+              
+                 </body>
 </html>
